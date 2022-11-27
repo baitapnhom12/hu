@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    
+    <div class="owl-carousel owl-theme">
+        
+
+            <div class="show-slider">
+                <div class="slider__content">
+                    <span>Vào Bếp Ngay</span>
+                    <h3>mì ý</h3>
+                    <p>món ăn quốc dân giúp bạn như đi du lịch italy</p>
+                    <button class="slider__btn">oder ngay</button>
+                </div>
+                <div class="slider__image">
+                    <img src="images/home-img-1.png" alt="">
+                </div>
+            </div>
+    
+        
+        
+
+            <div class="show-slider">
+                <div class="slider__content">
+                    <span>Vào Bếp Ngay</span>
+                    <h3>mì ý</h3>
+                    <p>món ăn quốc dân giúp bạn như đi du lịch italy</p>
+                    <button class="slider__btn">oder ngay</button>
+                </div>
+                <div class="slider__image">
+                    <img src="images/home-img-1.png" alt="">
+                </div>
+            </div>
+            <div class="show-slider">
+                <div class="slider__content">
+                    <span>Vào Bếp Ngay</span>
+                    <h3>mì ý</h3>
+                    <p>món ăn quốc dân giúp bạn như đi du lịch italy</p>
+                    <button class="slider__btn">oder ngay</button>
+                </div>
+                <div class="slider__image">
+                    <img src="images/home-img-1.png" alt="">
+                </div>
+            </div>
+    
+        
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        
+    }
+})
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[4000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+    </script>
+</body>
+</html>
